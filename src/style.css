@@ -1,7 +1,38 @@
+body {
+  background: #fff1c1 !important;
+}
+
 .weather-app {
+  background-color: #fbfbfb !important;
   max-width: 800px;
   margin: 30px auto;
   padding: 20px;
-  border: 3px solid black;
-  border-radius: 7px;
+  border: 1px solid #808b97;
+  border-radius: 5px;
+}
+
+.btn-search {
+  padding: 7px 27px;
+  border: none;
+  background: #78b7bb;
+  border-radius: 5px;
+  color: #fff;
+}
+
+h2 {
+  display: inline;
+}
+
+.icons {
+  width: 70px;
+}
+
+.day-week,
+.temp-week {
+  display: block;
+}
+
+.weather-footer {
+  margin-top: 40px;
+  text-align: center;
 }

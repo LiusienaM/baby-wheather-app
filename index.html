@@ -15,45 +15,84 @@
   <div class="container">
     <div class="weather-app">
 
-      <h1>
-        New York
-      </h1>
-      <h2>
-        12°C |°F
-      </h2>
-      <ul>
-        <li>
-          Sunday 19:50
-        </li>
-        <li>
-          Cloudy
-        </li>
-      </ul>
+      <div class="row city-search">
+        <div class="col-10">
+          <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Enter a city...">
+          <datalist id="datalistOptions">
+            <option value="Kyiv">
+            <option value="New York">
+            <option value="Bucharest">
+            <option value="Paris">
+          </datalist>
+        </div>
+        <div class="col-2">
+          <button type="button" class="btn-search">Search</button>
+        </div>
+      </div>
 
-      <div class="row">
+      <div class="row city-name">
+
         <div class="col-6">
+          <h1>
+            New York
+          </h1>
           <ul>
             <li>
-              Precipitation: 0%
+              <span class="day">Sunday</span>
+              <span class="time">19:50</span>|
+              <span>Cloudy</span>
             </li>
             <li>
-              Humidity: 0%
-            </li>
-            <li>
-              Wind: 2km/h
+              Humidity: 0% | Wind: 2km/h
             </li>
           </ul>
         </div>
-        <div class="col-6">
-          <img src="img/cloud-sun.png" alt="Cloud" width="300">
+
+        <div class="col-6 d-flex justify-content-end">
+          <img src="img/cloud-sun.png" alt="Cloud" width="170">
+          <span>13</span>
+          <span class="temprature">°C | °F</span>
+        </div>
+      </div>
+
+      <div class="row text-center days">
+        <div class="col">
+          <span class="day-week">Tue</span>
+          <img src="img/cloud.png" alt="cloud" class="icons">
+          <span class="temp-week">13° 8°</span>
         </div>
 
+        <div class="col">
+          <span class="day-week">Wed</span>
+          <img src="img/rain-cloud.png" alt="rain cloud" class="icons">
+          <span class="temp-week">10° 7°</span>
+        </div>
+
+        <div class="col">
+          <span class="day-week">Thu</span>
+          <img src="img/rain.png" alt="rain" class="icons">
+          <span class="temp-week">10° 5°</span>
+        </div>
+
+        <div class="col">
+          <span class="day-week">Fri</span>
+          <img src="img/sun.png" alt="sun" class="icons">
+          <span class="temp-week">13° 7°</span>
+        </div>
+
+        <div class="col">
+          <span class="day-week">Sat</span>
+          <img src="img/cloud-sun.png" alt="cloud sun" class="icons">
+          <span class="temp-week">11° 8°</span>
+        </div>
       </div>
+
+      <footer class="weather-footer">
+        <a href="https://github.com/LiusienaM/baby-wheather-app" target="_blank">Open-source code</a> by Liusiena
+        Martyniuk
+      </footer>
+
     </div>
-    <small>
-      <a href="https://github.com/LiusienaM/baby-wheather-app" target="_blank">Open-source code </a> by Liusiena
-      Martyniuk
-    </small>
   </div>
   <script src="src/app.js"></script>
 </body>
