@@ -67,6 +67,17 @@ ul {
   font-size: 60px;
 }
 
+.fahrenheit {
+  text-decoration: none;
+  color: #78b7bb;
+  transition: all 200ms ease-in-out;
+}
+
+.fahrenheit:hover {
+  text-decoration: underline;
+  color: #6b747c;
+}
+
 .days {
   padding-top: 30px;
   text-align: center;
@@ -90,6 +101,7 @@ ul {
 .link-git {
   text-decoration: none;
   color: #78b7bb;
+  transition: all 200ms ease-in-out;
 }
 
 .link-git:hover {
