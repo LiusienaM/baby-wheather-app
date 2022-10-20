@@ -41,11 +41,14 @@ body {
 
 ul {
   list-style-type: none;
-  /* padding: 0; */
 }
 
 .properties {
   margin: 10px 0 0 50px;
+}
+
+.weather-now {
+  text-transform: capitalize;
 }
 
 .time,
