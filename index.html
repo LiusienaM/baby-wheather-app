@@ -20,97 +20,94 @@
   <div class="container-fluid">
     <div class="weather-app">
 
-      <div class="row city-search">
-        <div class="col-8">
-          <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Enter a city...">
-          <datalist id="datalistOptions">
-            <option value="Kyiv">
-            <option value="New York">
-            <option value="Bucharest">
-            <option value="Paris">
-          </datalist>
-        </div>
-        <div class="col-4">
-          <button type="button" class="btn-search">Search</button>
-        </div>
-
-        <div class="row city-properties">
-
-          <div class="col-6">
-            <h1 class="city-name" id="cityName">
-              New York
-            </h1>
-            <ul class="properties">
-              <li>
-                <span class="day" id="date">Sunday</span> |
-                <span class="weather-now" id="weatherNow">Cloudy</span>
-              </li>
-              <li>
-                <span class="humidity">Humidity:</span>
-                <span class="humidity-percent" id="humidityPercent"></span>
-                <span class="humidity-percent">%</span> |
-                <span class="wind">Wind:</span>
-                <span class="wind-propertie" id="windSpeed">
-                </span>
-                <span class="wind-propertie">km/h</span>
-              </li>
-
-            </ul>
+      <form action="" id="search-form">
+        <div class="row">
+          <div class="col-8">
+            <input class="form-control" id="city-search" placeholder="Enter a city...">
           </div>
+          <div class="col-4">
+            <input type="submit" class="btn-search" id="button" value="Search">
+          </div>
+        </div>
+      </form>
 
-          <div class="col-6 d-flex justify-content-start">
-            <img src="" alt="Cloud" id="icon" class="main-icon">
-            <div class="main-temp">
-              <span class="temp-now" id="tempNow"></span>
-              <span class="units">°C |
-                <a href="#" class="fahrenheit">°F</a>
+      <div class="row city-properties">
+
+        <div class="col-6">
+          <h1 class="city-name" id="cityName">
+            New York
+          </h1>
+          <ul class="properties">
+            <li>
+              <span class="day" id="date">Sunday</span> |
+              <span class="weather-now" id="weatherNow">Cloudy</span>
+            </li>
+            <li>
+              <span class="humidity">Humidity:</span>
+              <span class="humidity-percent" id="humidityPercent"></span>
+              <span class="humidity-percent">%</span> |
+              <span class="wind">Wind:</span>
+              <span class="wind-propertie" id="windSpeed">
               </span>
-            </div>
-          </div>
+              <span class="wind-propertie">km/h</span>
+            </li>
+
+          </ul>
         </div>
 
-        <div class="days">
-          <div class="row d-flex justify-content-center">
-            <div class="col-2">
-              <span class="day-week">Tue</span>
-              <img src="img/01d.png" alt="cloud" class="icons">
-              <span class="temp-week">13° 8°</span>
-            </div>
-
-            <div class="col-2">
-              <span class="day-week">Wed</span>
-              <img src="img/50d.png" alt="rain cloud" class="icons">
-              <span class="temp-week">10° 7°</span>
-            </div>
-
-            <div class="col-2">
-              <span class="day-week">Thu</span>
-              <img src="img/11d.png" alt="rain" class="icons">
-              <span class="temp-week">10° 5°</span>
-            </div>
-
-            <div class="col-2">
-              <span class="day-week">Fri</span>
-              <img src="img/11d.png" alt="sun" class="icons">
-              <span class="temp-week">13° 7°</span>
-            </div>
-
-            <div class="col-2">
-              <span class="day-week">Sat</span>
-              <img src="img/03d.png" alt="cloud sun" class="icons">
-              <span class="temp-week">11° 8°</span>
-            </div>
+        <div class="col-6 d-flex justify-content-start">
+          <img src="" alt="Cloud" id="icon" class="main-icon">
+          <div class="main-temp">
+            <span class="temp-now" id="tempNow"></span>
+            <span class="units">°C |
+              <a href="#" class="fahrenheit">°F</a>
+            </span>
           </div>
         </div>
-        <footer class="weather-footer">
-          <a href="https://github.com/LiusienaM/baby-wheather-app" target="_blank" class="link-git">Open-source code</a>
-          by Liusiena
-          Martyniuk
-        </footer>
-
       </div>
+
+      <div class="days">
+        <div class="row d-flex justify-content-center">
+          <div class="col-2">
+            <span class="day-week">Tue</span>
+            <img src="img/01d.png" alt="cloud" class="icons">
+            <span class="temp-week">13° 8°</span>
+          </div>
+
+          <div class="col-2">
+            <span class="day-week">Wed</span>
+            <img src="img/50d.png" alt="rain cloud" class="icons">
+            <span class="temp-week">10° 7°</span>
+          </div>
+
+          <div class="col-2">
+            <span class="day-week">Thu</span>
+            <img src="img/11d.png" alt="rain" class="icons">
+            <span class="temp-week">10° 5°</span>
+          </div>
+
+          <div class="col-2">
+            <span class="day-week">Fri</span>
+            <img src="img/11d.png" alt="sun" class="icons">
+            <span class="temp-week">13° 7°</span>
+          </div>
+
+          <div class="col-2">
+            <span class="day-week">Sat</span>
+            <img src="img/03d.png" alt="cloud sun" class="icons">
+            <span class="temp-week">11° 8°</span>
+          </div>
+        </div>
+      </div>
+      <footer class="weather-footer">
+        <a href="https://github.com/LiusienaM/baby-wheather-app" target="_blank" class="link-git">Open-source code</a>
+        by Liusiena
+        Martyniuk
+      </footer>
+
     </div>
-    <script src="src/app.js"></script>
+  </div>
+  <script src="src/app.js"></script>
 </body>
 
 </html>
