@@ -21,6 +21,27 @@ function formatDate(timestemp) {
   return `${day} ${hours}:${minutes}`;
 }
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let days = ["Tue", "Wed", "Thu", "Fri"];
+  let forecastHTML = `<div class="row d-flex justify-content-center">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `<div class="col-2">
+            <span class="day-week">${day}</span>
+            <img src="img/01d.png" alt="cloud" class="icons">
+            <span class="temp-week">13° 8°</span>
+          </div>
+        `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function displayTemperature(response) {
   let temperatureElement = document.querySelector("#tempNow");
   let cityElement = document.querySelector("#cityName");
@@ -76,6 +97,8 @@ function displayCelsiusTemp(event) {
 }
 
 let celsiusTemp = null;
+
+displayForecast();
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
