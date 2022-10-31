@@ -109,8 +109,6 @@ function displayCelsiusTemp(event) {
 
 let celsiusTemp = null;
 
-// displayForecast();
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
 
