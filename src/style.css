@@ -93,9 +93,12 @@ ul {
   width: 70px;
 }
 
-.day-week,
-.temp-week {
+.day-week {
   display: block;
+  padding: 10px 0 10px 0;
+}
+
+.temp-now-week {
   padding: 10px 0 10px 0;
 }
 
