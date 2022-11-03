@@ -87,12 +87,6 @@ function displayTemperature(response) {
     .setAttribute("src", `img/${response.data.weather[0].icon}.png`);
 
   getForecast(response.data.coord);
-
-  // iconElement.setAttribute(
-  //   "src",
-  //   `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  // );
-  // iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function search(city) {
@@ -108,28 +102,7 @@ function handleSubmit(event) {
   search(cityInputElement.value);
 }
 
-function displayFahrenheitTemp(event) {
-  event.preventDefault();
-  let fahrenheitTemp = (celsiusTemp * 9) / 5 + 32;
-  let temperatureElement = document.querySelector("#tempNow");
-  temperatureElement.innerHTML = Math.round(fahrenheitTemp);
-}
-
-function displayCelsiusTemp(event) {
-  event.preventDefault();
-  let temperatureElement = document.querySelector("#tempNow");
-  temperatureElement.innerHTML = Math.round(celsiusTemp);
-}
-
-let celsiusTemp = null;
-
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
-
-let fahrenheitLink = document.querySelector("#fahrenheit");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemp);
-
-let celsiusLink = document.querySelector("#celsius");
-celsiusLink.addEventListener("click", displayCelsiusTemp);
 
 search("Kyiv");

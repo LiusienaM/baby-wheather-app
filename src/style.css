@@ -69,19 +69,9 @@ ul {
   font-size: 60px;
 }
 
-.fahrenheit,
-.celsius {
+.units {
   color: #78b7bb;
-  font-size: 20px;
-  transition: all 200ms ease-in-out;
-}
-
-.fahrenheit:hover {
-  color: #6b747c;
-}
-
-.celsius:hover {
-  color: #6b747c;
+  font-size: 30px;
 }
 
 .weather-forecast {
